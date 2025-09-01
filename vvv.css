@@ -1,0 +1,60 @@
+/* ตั้งค่าเริ่มต้น */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b6d0ee;
+}
+
+/* Header */
+header {
+    background-color: rgb(6, 45, 117);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Layout หลัก */
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: #afc4dd;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* เนื้อหาหลัก */
+.content {
+    width: 75%;
+    background: rgb(80, 138, 245);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #12254e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

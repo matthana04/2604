@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("c:\Users\USER\OneDrive\Pictures\พื้นหลัง.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<div style="height:800px;background-image:url('https://static.cdntap.com/tap-assets-prod/wp-content/uploads/sites/25/2022/02/orange-cake-lead.jpg');background-size:cover" class="w3-display-container w3-grayscale-min">
+</div>
+  <div class="w3-display-middle w3-center">
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks1');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-dark-grey">Drinks</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks2');">
+        <div class="w3-col s4 tablink w3-padding-large w3-dark-grey">Drinks</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks3');">
+        <div class="w3-col s4 tablink w3-padding-large w3-dark-grey">Drinks</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cake1');">
+        <div class="w3-col s4 tablink w3-padding-large w3-dark-grey">Cake</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cake2');">
+        <div class="w3-col s4 tablink w3-padding-large w3-dark-grey">Cake</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cake3');">
+        <div class="w3-col s4 tablink w3-padding-large w3-dark-grey">Cake</div>
+      </a>
+    </div>
+
+    <div id="Drinks1" class="w3-container menu w3-padding-32 w3-white">
+      
+    </div>
+
+    <div id="Drinks2" class="w3-container menu w3-padding-32 w3-white">
+      
+    </div>
+
+
+    <div id="Drinks3" class="w3-container menu w3-padding-32 w3-white">
+      
+    </div>
+
+    <div id="Cake1" class="w3-container menu w3-padding-32 w3-white">
+      
+    </div>
+
+    <div id="Cake2" class="w3-container menu w3-padding-32 w3-white">
+         <div class="w3-card-4" style="width:50%">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_HKWZ9Ie5nwJ0FejbaI8VVXpEVw_lqyvWg&s" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กเลม่อน</b></h4>
+              <p>55 ฿</p>
+            </div>
+        </div><br>
+         <div class="w3-card-4" style="width:50%">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_HKWZ9Ie5nwJ0FejbaI8VVXpEVw_lqyvWg&s" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กเลม่อน</b></h4>
+              <p>55 ฿</p>
+            </div>
+        </div><br>
+         <div class="w3-card-4" style="width:50%">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_HKWZ9Ie5nwJ0FejbaI8VVXpEVw_lqyvWg&s" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กเลม่อน</b></h4>
+              <p>55 ฿</p>
+            </div>
+        </div><br>
+         <div class="w3-card-4" style="width:50%">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_HKWZ9Ie5nwJ0FejbaI8VVXpEVw_lqyvWg&s" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กเลม่อน</b></h4>
+              <p>55 ฿</p>
+            </div>
+        </div><br>
+         <div class="w3-card-4" style="width:50%">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_HKWZ9Ie5nwJ0FejbaI8VVXpEVw_lqyvWg&s" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้ก</b></h4>
+              <p>55 ฿</p>
+            </div>
+        </div><br>
+         <div class="w3-card-4" style="width:50%">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_HKWZ9Ie5nwJ0FejbaI8VVXpEVw_lqyvWg&s" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>ชีสเค้ก</b></h4>
+              <p>55 ฿</p>
+            </div>
+        </div><br>
+    </div>
+
+
+<div class="row">
+    <div id="Cake3" class="w3-container menu w3-padding-32 w3-white">
+        <div class="w3-card-4" style="width:50%">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_HKWZ9Ie5nwJ0FejbaI8VVXpEVw_lqyvWg&s" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กเลม่อน</b></h4>
+              <p>55 ฿</p>
+            </div>
+        </div><br>
+   
+        <div class="w3-card" style="width:50%">
+            <img src="https://img-global.cpcdn.com/recipes/76b2d0c4b62ff255/400x400cq90/photo.jpg" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กเนยสด</b></h4>
+              <p>45 ฿ </p>
+            </div>
+        </div><br>
+
+        <div class="w3-card" style="width:50%">
+            <img src="https://image.makewebcdn.com/makeweb/m_1920x0/I1MJQjJJO/Cake/Black_Forest_2.jpg?v=202405291424" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กโรล</b></h4>
+              <p>35 ฿ </p>
+            </div>
+        </div><br>
+
+        <div class="w3-card" style="width:50%">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgDOsSqvQoc7tiKX5vGzHzu816JiACLUXP1BlEYOeKxp2tPifDgwR_ll9YA5PfKa4ZKE&usqp=CAU" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กกล้วยหอม</b></h4>
+              <p>35 ฿ </p>
+            </div>
+        </div><br>
+
+        <div class="w3-card" style="width:50%">
+            <img src="https://img-global.cpcdn.com/recipes/bda0f15fc873c21d/400x400cq90/photo.jpg" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กสตอเบอรี่</b></h4>
+              <p>65 ฿ </p>
+            </div>
+        </div><br>
+
+        <div class="w3-card" style="width:50%">
+            <img src="https://agarmermaid.com/wp-content/uploads/2024/08/beautiful-flower-shaped-coconut-milk-jelly-cake_54109-422.jpg" alt="Person" style="width:100%">
+            <div class="w3-container">
+              <h4><b>เค้กวุ้น</b></h4>
+              <p>45 ฿ </p>
+            </div>
+        </div><br>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>"By Pie Cafe "</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

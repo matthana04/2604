@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ตัวอย่าง Popup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* พื้นหลังของ popup */
+    .modal {
+      display: none; /* ซ่อนเริ่มต้น */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(221, 186, 231);
+    }
+
+    /* กล่องเนื้อหาภายใน popup */
+    .modal-content {
+      background-color: #92c2d1;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 300px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* ปุ่มปิด (×) */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: #568f3c;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ปุ่มเปิด popup -->
+  <button id="openPopup">เปิด Popup</button>
+
+  <!-- โครงสร้าง popup -->
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>สวัสดี!</h2>
+      <p>นี่คือ Popup ที่สร้างด้วย HTML, CSS และ JavaScript.</p>
+      <p>"Hello, I'm Matana Wongsawat. A warm welcome to you!"</p>
+    </div>
+  </div>
+
+  <!-- JavaScript สำหรับควบคุมการเปิด/ปิด -->
+  <script>
+    const modal = document.getElementById("popupModal");
+    const btn = document.getElementById("openPopup");
+    const span = document.querySelector(".close");
+
+    // เมื่อคลิกปุ่มเปิด
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // เมื่อคลิกปุ่มปิด (×)
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // เมื่อคลิกนอก popup ให้ปิด
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
